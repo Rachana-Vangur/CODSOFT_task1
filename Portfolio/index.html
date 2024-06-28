@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="iconDino !background.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Rachana</title>
+  </head>
+  <body>
+    <main style="height: 100vh">
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="logo" src="Green DINO.png" alt="logo"
+        /></a>
+        <ul>
+          <li onclick="view('about');"><a href="#">About</a></li>
+          <li onclick="view('skills');"><a href="#">Skills</a></li>
+          <li onclick="view('projects');"><a href="#">Projects</a></li>
+          <li>
+            <a id="resume-button" href="Resume.pdf" download="Resume.pdf"
+              >RESUME</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="about">
+        <div class="dp-container">
+          <img class="dp" src="No background Image.png" alt="display picture" />
+        </div>
+        <div class="pic-desc">
+          <h1 id="myName" data-value="<\RACHANA>">&lt\RACHANA&gt</h1>
+          <br />
+
+          <p>
+            Hello there, I am
+            <span class="VR" style="color: #7890f0; text-decoration: underline">
+              <a
+                style="color: #7890f0; text-decoration: underline"
+                href="https://www.linkedin.com/in/rachana-vangur-17657327a/"
+              >
+                Rachana Vangur</a
+              ></span
+            >, a Computer Science Student. I am currently engaged in two
+            internships where I am gaining practical experience which are also
+            helping me enhance my skills in programming and software
+            development. Recently, I have developed a strong interest in
+            cybersecurity and am actively learning about the latest trends in
+            this field. Some of my notable projects include, creating a data
+            compressor and developing an Experimental Operating System, in which
+            I have gained deep understanding of Operating Systems. I am eager to
+            apply my skills and knowledge to innovative projects and contribute
+            to the tech community. I look forward to connecting and exploring
+            new opportunities in the tech world.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="divider">
+      <div class="divider-box">
+        <h2>~/Portfolio/Rachana/Skills</h2>
+      </div>
+      <hr style="border: 0.5px dashed #fafafa" />
+    </div>
+
+    <div id="skills">
+      <h2 style="color: #eb02ec; padding-top: 50px; font-size: 40px">
+        [Skills]
+      </h2>
+
+      <div class="skills-list">
+        <ul>
+          <li id="clickedS1" onclick="skills()">
+            <span style="color: red">>> </span>Technical
+          </li>
+          <li id="clickedS2" onclick="problemSol()">
+            <span style="color: red">>> </span>Problem Solving
+          </li>
+          <li id="clickedS3" onclick="comm()">
+            <span style="color: red">>> </span>Communication / Soft Skills
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-desc">
+        <div class="skill-box">
+          <h3 style="margin: 8px">HTML/CSS/JS</h3>
+          <br />
+          <p style="margin: 8px">
+            I have learnt HTML and CSS alongside with JS and also worked on some
+            mini projects. I am still honing my skills in this field.
+          </p>
+        </div>
+        <div cass="skill-box">
+          <h3 style="margin: 8px">C/C++</h3>
+          <br />
+          <p style="margin: 8px">
+            C and C++ are the languages in which I am well-veresed. C++ is the
+            language I use for coding. I am comfortable in it. And I have been
+            learning Data Structures in this language.
+          </p>
+        </div>
+        <div class="skill-box">
+          <h3 style="margin: 8px">Java</h3>
+          <br />
+          <p style="margin: 8px">
+            I learnt java through academics and have actually worked on a
+            personal real-life project called as Data Compressor.
+          </p>
+        </div>
+        <div class="skill-box">
+          <h3 style="margin: 8px">PHP</h3>
+          <br />
+          <p style="margin: 8px">
+            I know the basics of PHP but haven't yet worked on a project with
+            it. I am still exploring the language to get a better grip on it.
+          </p>
+        </div>
+
+        <div class="prob-box">
+          <h3 style="margin: 8px">LeetCode</h3>
+          <br />
+          <p style="margin: 8px">
+            I do LeetCode to learn and practise Data Structures and Algorithms.
+            Till now I have solved nearly 95 problems on it.
+          </p>
+        </div>
+
+        <div class="comm-box">
+          <h3 style="margin: 8px">Fluency in English</h3>
+          <br />
+          <p style="margin: 8px">
+            I am fluent in english and always look ways to hone my communication
+            skills. I listen to a lot or podcasts to improve my hearing skills.
+            I seldom read books in my free time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <div class="divider-box">
+        <h2>~/Portfolio/Rachana/Projects</h2>
+      </div>
+      <hr style="border: 0.5px dashed #fafafa" />
+    </div>
+
+    <div id="projects">
+      <h2 style="color: #eb02ec; font-size: 40px; padding-top: 50px">
+        [Projects]
+      </h2>
+
+
+      <div class="proj-desc">
+        <div class="proj-box" onclick="git_dc()">
+          <h3 style="margin: 8px">Data Compressor</h3>
+          <br />
+          <p style="margin: 8px">
+            Built a data compressor which takes the data from the user and
+            compresses it efficiently. Used Huffmann Algorithm for optimal
+            approach.
+          </p>
+          <img class="maximizing" src="maximize.png" alt="" />
+        </div>
+        <div cass="proj-box" onclick="git_expos()">
+          <h3 style="margin: 8px">eXpOS</h3>
+          <br />
+          <p style="margin: 8px">
+            Written system interrupts and exception handlers etc for an
+            experimental operating system which was run on a experimental string
+            machine simulator.
+          </p>
+          <img id="#show" style="visibility: hidden;" class="maximizing" src="maximize.png" alt=""/>
+        </div>
+        <div class="proj-box" onclick="git_pswd()">
+          <h3 style="margin: 8px">Password Manager</h3>
+          <br />
+          <p style="margin: 8px">
+            Created a manager for passwords, which stores your passwords
+            encrypted and fetches them when needed. Uses a master key for
+            verifying the user. Written in python.
+          </p>
+          <img class="maximizing" src="maximize.png" alt="" />
+        </div>
+        <div class="proj-box" onclick="git_emailSen()">
+          <h3 style="margin: 8px">Automatic email sender</h3>
+          <br />
+          <p style="margin: 8px">
+            Python programme which sends email to a receiver based on time. Used
+            google app passwords.
+          </p>
+          <img class="maximizing" src="maximize.png" alt="" />
+        </div>
+
+        <div class="proj-box" onclick="git_url()">
+          <h3 style="margin: 8px">URL shortener</h3>
+          <br />
+          <p style="margin: 8px">
+            Shortens any given url. Can also do the reverse i.e retrives the
+            long url based on shortened url. Written in python.
+          </p>
+          <img class="maximizing" src="maximize.png" alt="" />
+        </div>
+
+        <div class="proj-box" onclick="git_cc()">
+          <h3 style="margin: 8px">Currency converter</h3>
+          <br />
+          <p style="margin: 8px">
+            Converts currency using real time exchanage rate values between
+            different countries. Written in python.
+          </p>
+          <img class="maximizing" src="maximize.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="divider-box">
+        <h2>
+          ~/Portfolio/Rachana/<span
+            
+            >Resume</span
+          >
+        </h2>
+      </div>
+      <hr style="border: 0.5px dashed #fafafa" />
+    </div>
+    <div>
+      <div id="resume-cont">
+        <h2 style="color: #eb02ec; font-size: 40px; padding: 50px">[Resume]</h2>
+
+        <object
+          class="resumeFile"
+          type="application/pdf"
+          data="Resume.pdf"
+          width="60%"
+          height="200px"
+        ></object>
+      </div>
+      <div class="contact">
+        <h2 style="padding-bottom: 50px">Connect with the operator:</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/Rachana-Vangur"
+              ><img src="github-logo-24.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rachana-vangur-17657327a/"
+              ><img src="linkedin-square-logo-24.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:rachanavangur@gmail.com"
+              ><img src="gmail-logo-24.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/leecodes.03/"
+              ><img src="instagram-logo-24.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <p style="color: #22d82f; background-color: #28282b; font-weight: bolder">
+        &copy; rachanavangur
+      </p>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

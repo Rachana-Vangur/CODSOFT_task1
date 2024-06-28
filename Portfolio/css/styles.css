@@ -1,0 +1,459 @@
+@font-face {
+    font-family: 'TerminalFont';
+    src: url(Glass_TTY_VT220.ttf) format('truetype');
+}
+
+*{
+    
+    background-color: black;
+    color: #22D82F;
+    font-family: 'TerminalFont', 'monospace';
+    /* hehe
+    overflow-x: hidden; */
+    
+}
+body [data-sizing='intrinsic']{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'TerminalFont', 'monospace';
+    
+}
+#myName{
+    font-family: 'TerminalFont', 'monospace';
+    font-size: 45px;
+    /* color: #EB02EC; */
+    
+
+}
+.logo{
+    height: 75px;
+    width: 100px;
+    margin-top: 10px;
+   
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+  }
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden;
+    justify-content: space-around; */
+
+    /* hehe
+    align-items: center;
+    
+    margin-left: auto; */
+   
+    
+}
+.navbar a{
+    /* hehe
+    display: block;
+    text-align: center; */
+    text-decoration: none;
+}
+.navbar .logo{
+    width: 70px;
+  height: 50px;
+}
+/* hehe
+.navbar li{
+    margin-right: 40px;
+    font-size: 20px;
+    
+   
+} */
+
+
+/* adding this */
+
+.navbar a:hover{
+    color: #FAFAFA;
+}
+/* hehe
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    changed navbar
+} */
+
+/* adding this */
+#about, #skills, #projects {
+    padding: 20px;
+    overflow: hidden;
+   
+  }
+/* adding this */
+#about{
+    display: center;
+}
+.dp-container {
+    text-align: center;
+  }
+
+
+#resume-button{
+    background-color: #22D82F;
+    color: black;
+    border-radius: 5%;
+    border: 1px solid #22D82F;
+   font-family: sans-serif;
+   font-size: medium;
+   padding: 5px;
+}
+#resume-button:hover{
+    color: #22D82F;
+    background-color: black;
+}
+
+
+.VR:hover{
+    /* transform: translate(0, -10px); */
+    cursor: pointer;
+}
+
+
+.dp{
+    max-height: 400px;
+    max-width: 300px;
+    border-radius: 5%;
+    border-color: #22D82F;
+    border-style: inset;
+    box-shadow: 1px 5px 10px 0px #28282B;
+}
+
+.dp:hover{
+    box-shadow: 5px 5px 10px 2px #22D82F;
+    transform: translate(0, -10px);
+
+}
+
+.dp-container{
+    padding-left: 10%;
+    padding-top: 7%;
+}
+    /* check this again*/
+
+.pic-desc{
+    
+    overflow: hidden; /* Hide overflowing content */
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; /* Allow text to wrap */
+
+    padding-top: 40px;
+    padding-left: 60px;
+    max-width: 50%; 
+    /* padding: 70px; */
+}
+/* .pic-desc p{
+    right: 0;
+    bottom: 0;
+}
+.pic-desc h2{
+    position: absolute;
+} */
+
+
+
+.pic-desc::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.divider {
+    text-align: left;
+  
+}
+.divider-box {
+    display: inline-block;
+    background-color: black;
+    padding: 0;
+  }
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-bottom: 2%; */
+}
+#about p{
+    font-size: 20px;
+    text-indent: 50px;
+    min-width: 75%;
+}
+
+/* hr{
+    border: 1px dashed #FAFAFA;
+} */
+
+/* .divider div, .divider hr{
+    display: inline-block;
+} */
+/* 
+important
+.divider-box h2{
+    background-color: 	#28282B;
+    height: 25px;
+    max-width: 65%;
+} */
+
+/* .divider div, hr{
+    display: flex;
+} */
+
+#skills, #projects, .resume-cont{
+    padding-left: 12%;
+    height: 100vh;
+
+}
+
+/* important
+.skills-list{
+    padding: 20px;
+} */
+
+.skills-list ul, .project-list ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.skills-list ul li, .project-list ul li{
+    cursor: pointer;
+    font-size: larger;
+    margin: 5px 0;
+    /* margin: 20px; */
+    width: 400px; 
+}
+
+.skills-list ul li:hover, .project-list ul li:hover{
+    color: #FAFAFA ;
+    cursor: pointer;
+}
+
+.skill-desc, .proj-desc {
+    height: 60%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px
+}
+/* .project-desc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+} */
+.skill-desc div, .proj-desc div{
+
+    overflow: hidden; /* Hide overflowing content */
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; /* Allow text to wrap */
+
+    display: flex;
+    /*changed here*/
+    height: 42%;
+    width: 25%;
+    background-color: black;
+    margin: 20px;
+    flex-wrap: wrap;
+    border: 1px inset #22D82F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #28282B;
+}
+/* .skill-box div p [data-sizing='intrinsic']{
+
+} */
+.skill-desc div:hover, .proj-desc div:hover{
+    box-shadow: 5px 5px 20px 0px #22D82F;
+    transform: translate(0, -10px);
+    /* I want the h3 element to change color how?*/
+
+    
+
+    /* background-color: #28282B; */
+}
+.skill-desc div:hover > h3, .proj-desc div:hover > h3{
+    color:  #7890F0;
+}
+
+
+
+.skill-box{
+    display: none;
+}
+/* .skill-box, .prob-box, .comm-box {
+    background-color: #444;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+  }
+   */
+
+
+
+.prob-box, .comm-box{
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    margin: 30px;
+    border: 1px inset #22D82F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #28282B;
+   
+}
+.prob-box:hover, .comm-box:hover, #data-comp:hover, #expos:hover{
+    box-shadow: 5px 5px 20px 0px #22D82F;
+    transform: translate(0, -10px);
+}
+/* important 
+.project-desc{
+    display: block;
+} */
+
+#data-comp, #expos{
+    height: 200px;
+    width: 60%;
+    background-color: black;
+    margin: 30px;
+    border: 1px inset #22D82F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #28282B;
+}
+
+.skill-box:target{
+    box-shadow: 5px 5px 20px 0px #22D82F;
+    transform: translate(0, -10px);
+}
+
+
+
+#resume-cont{
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 10%; */
+    /* height: 70vh; */
+}
+
+.resumeFile{
+    margin-top: 0px;
+    border: 3px inset #22D82F;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #28282B;
+}
+
+ .resumeFile:hover /*.contact ul li:hover{ */{
+    box-shadow: 5px 5px 5px 0px #22D82F;
+    transform: translate(0, -10px);
+}
+.contact ul li:hover{
+    transform: translate(0, -5px);
+}
+/* .contact{
+    /* padding-left: 12%; */
+    
+    
+
+.contact ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* gap: 20px; */
+}
+/* important 
+.contact ul li{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    align-self: center;
+    text-align: center;
+    padding-top: 40px;
+    gap: 20px;
+} */
+.contact ul li {
+    margin: 0 10px;
+}
+  
+.contact ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+footer{
+    height: 50px;
+    background-color: #28282B;
+    color: #22D82F;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maximizing{
+    height: 20px;
+    width: 20px;
+}
+#show:hover{
+    visibility: visible;
+    right: 0;
+    bottom: 0;
+}
+.proj-box img{
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+@media (max-width: 600px){
+    .skill-desc div{
+        height: 20%;
+        width: 30%;
+    }
+    .contact ul li img{
+        height: 40%;
+        width: 60%;
+    }
+    .pic-desc{
+        width: fit-content;
+        height: min-content;
+    }
+    .dp{
+        height: 200px;
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 950px){
+    /* .skill-desc div{
+        height: 20%;
+        width: 30%;
+    }
+    .contact ul li img{
+        height: 40%;
+        width: 60%;
+    } */
+    #about, #skills, #projects{
+        height: 100vh;
+    }
+
+}
+
